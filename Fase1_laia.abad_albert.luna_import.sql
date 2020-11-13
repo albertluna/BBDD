@@ -22,7 +22,7 @@ CREATE TABLE CustomersOrders (
 	Phone2				VARCHAR(255)
 );
 
-COPY CustomersOrders FROM '/Users/Shared/CustomersOrders.csv' CSV HEADER DELIMITER ',';
+COPY CustomersOrders FROM '/CustomersOrders.csv' CSV HEADER DELIMITER ',';
 
 
 DROP TABLE IF EXISTS EmployeesSales;
@@ -64,7 +64,7 @@ CREATE TABLE EmployeesSales (
 	RegionDescription		VARCHAR(255)
 );
 
-COPY EmployeesSales FROM '/Users/Shared/EmployeesSales.csv' CSV HEADER DELIMITER ',';
+COPY EmployeesSales FROM '/EmployeesSales.csv' CSV HEADER DELIMITER ',';
 
 
 DROP TABLE IF EXISTS ProductsOrdered;
@@ -107,4 +107,4 @@ CREATE TABLE ProductsOrdered (
 	CategoryPicture				VARCHAR(255)
 );
 
-COPY ProductsOrdered FROM '/Users/Shared/ProductsOrdered.csv' CSV HEADER DELIMITER ',';
+COPY ProductsOrdered FROM '/ProductsOrdered.csv' CSV HEADER DELIMITER ',';
